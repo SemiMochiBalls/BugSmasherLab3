@@ -102,9 +102,6 @@ document.getElementById("resetSpeed").addEventListener("click", resetSpeed);
 document.getElementById("resetScore").addEventListener("click", resetScore);
 
 // Initialize the game
-playZoneImage.onload = () => {
-    bugImage.onload = () => {
-        splatteredImage.onload = () => {
             updateGame();
         };
     };
