@@ -28,9 +28,9 @@ let isSplattered = false;
 
 // Update the bug position
 function updateBugPosition() {
+    bugSize = Math.floor(Math.random() * 65) + 64; // Randomize bug size between 64 and 128
     bugX = Math.random() * (canvas.width - bugSize);
     bugY = Math.random() * (canvas.height - bugSize);
-    bugSize = Math.floor(Math.random() * 65) + 64; // Randomize bug size between 64 and 128
     isSplattered = false; // Reset the splattered flag
 }
 
@@ -102,7 +102,4 @@ document.getElementById("resetSpeed").addEventListener("click", resetSpeed);
 document.getElementById("resetScore").addEventListener("click", resetScore);
 
 // Initialize the game
-            updateGame();
-        };
-    };
-};
+updateGame();
